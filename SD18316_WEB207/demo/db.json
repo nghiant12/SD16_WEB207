@@ -1,0 +1,22 @@
+{
+  "student": [
+    {
+      "hoTen": "NghiaNT12",
+      "email": "abc@gmail.com",
+      "ngaySinh": "2004-02-12T02:45:30.525Z",
+      "id": "1"
+    },
+    {
+      "hoTen": "NghiaNT122222",
+      "email": "abc@gmail.com",
+      "ngaySinh": "2004-02-12T02:45:30.525Z",
+      "id": "0822"
+    },
+    {
+      "id": "634a",
+      "hoTen": "Nguyễn Thu Nghĩa",
+      "email": "thunghiaxinhgai@gmail.com",
+      "ngaySinh": "2004-02-11T17:00:00.000Z"
+    }
+  ]
+}

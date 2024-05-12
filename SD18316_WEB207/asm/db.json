@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "hoTen": "mạnh hâm",
+      "ngaySinh": "2024-01-27T17:00:00.000Z",
+      "gioiTinh": "1",
+      "cccd": "09876543212345",
+      "email": "ntmanh@gmail.com",
+      "sdt": "0868819924",
+      "tenDN": "manhnt",
+      "matKhau": "111111",
+      "id": "70ac"
+    },
+    {
+      "hoTen": "ádgfsdaf",
+      "ngaySinh": "2024-01-24T17:00:00.000Z",
+      "gioiTinh": "1",
+      "cccd": "0123456789123",
+      "email": "fgfdg@gmail.com",
+      "sdt": "0912341445",
+      "tenDN": "dshgdhhgd",
+      "matKhau": "8654653243",
+      "id": "c83b"
+    }
+  ],
+  "mon-hoc": [
+    {
+      "maMH": "MH01",
+      "tenMH": "Lập trình Android cơ bản",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "maMH": "MH02",
+      "tenMH": "Lập trình Android nâng cao"
+    },
+    {
+      "id": "3",
+      "maMH": "MH03",
+      "tenMH": "Kiểm thử và triển khai ứng dụng Android"
+    },
+    {
+      "id": "4",
+      "maMH": "MH04",
+      "tenMH": "Thiết kế UI Android"
+    },
+    {
+      "id": "5",
+      "maMH": "MH04",
+      "tenMH": "Lập trình ASP.NET"
+    }
+  ]
+}

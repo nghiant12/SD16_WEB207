@@ -1,0 +1,27 @@
+<div class="container-sm">
+    <div class="card my-4">
+        <h3 class="card-header px-5 text-start">{{title}}</h3>
+        <div class="card-body px-5">
+            <form ng-submit="login()">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Tên đăng nhập *</label>
+                    <input type="text" class="form-control" ng-model="user.tenDN">
+                    <p ng-if="kiemTra.tenDN" class="text-danger">Vui lòng nhập lại tên đăng nhập</p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password *</label>
+                    <input type="password" id="inputPassword5" class="form-control" ng-model="user.matKhau">
+                    <p ng-if="kiemTra.matKhau" class="text-danger">Vui lòng nhập lại mật khẩu</p>
+                </div>
+                <div class="mb-3">
+                    <p>Chưa có tài khoản?
+                        <a href="#!/dang-ky" class="text-dark-emphasis fw-medium text-decoration-none">Đăng ký ngay để
+                            trở
+                            thành thành viên của SWM</a>
+                    </p>
+                </div>
+                <button type="submit" class="btn btn-dark rounded px-3 mb-5">Đăng nhập</button>
+            </form>
+        </div>
+    </div>
+</div>

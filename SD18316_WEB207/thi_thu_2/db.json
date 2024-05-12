@@ -1,0 +1,20 @@
+{
+  "employee": [
+    {
+      "ho_ten": "Thu Nghĩa",
+      "sdt": "0834045324",
+      "email": "maymimim.1202@gmail.com",
+      "chuc_vu": "Nhân viên",
+      "ngay_sinh": "2004-02-11T17:00:00.000Z",
+      "id": "cde4"
+    },
+    {
+      "ho_ten": "fgjgf",
+      "sdt": "0934567345",
+      "email": "rtyirt@gmail.com",
+      "chuc_vu": "Trưởng phòng",
+      "ngay_sinh": "2024-02-04T17:00:00.000Z",
+      "id": "eda6"
+    }
+  ]
+}

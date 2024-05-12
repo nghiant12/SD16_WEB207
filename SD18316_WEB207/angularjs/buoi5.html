@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="employeeController">
+        <h1 ng-bind="title"></h1>
+        <!-- 
+            Tạo 1 select để orderBy dữ liệu theo trường lựa chọn
+            Tạo 1 select để quy định số lượng bản ghi được hiển thị
+            Tạo 1 ô tìm kiếm để tìm kiếm dữ liệu
+         -->
+        Order By:
+        <select ng-model="orderBy2">
+            <option value="">Lựa chọn</option>
+            <option value="hoTen">Họ tên</option>
+            <option value="ngaySinh">Ngày sinh</option>
+            <option value="luong">Lương</option>
+            <option value="gioiTinh">Giới tính</option>
+        </select>
+
+        Limit To:
+        <select ng-model="limitTo2">
+            <option value="">Lựa chọn</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        Search:
+        <input type="text" ng-model="search">
+
+        <table class="table table-hover table-striped">
+            <thead>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Ngày sinh</th>
+                <th>Lương</th>
+                <th>Giới tính</th>
+            </thead>
+            <tbody>
+                <!-- AngularJS Filters -->
+                <tr ng-repeat="item in employees | limitTo: limitTo2 | orderBy: orderBy2 | filter: search">
+                    <td>{{ $index + 1 }}</td>
+                    <td ng-click="xinchao(item.hoTen)"> {{ item.hoTen | uppercase }} </td>
+                    <td ng-mouseover="kiemTraTuoi(item.ngaySinh)">{{ item.ngaySinh | date : 'dd-MM-yyyy' }}</td>
+                    <td>{{ item.luong | currency : '' : 0 }} đ</td>
+                    <td>{{ item.gioiTinh == 0 ? "Nam" : "Nữ" }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 
+            ng-model: dùng để liên kết dữ liệu 2 chiều
+            giữa view và 1 biến chứa dữ liệu
+         -->
+        <input type="text" ng-model="title">
+
+        <!-- Click -->
+        <button class="btn btn-primary" ng-click="sayHello('DinhTV7')">Ấn vào em đi</button>
+
+        <!-- Hover -->
+        <h3 ng-mouseenter="myFunc()">Đưa tay đây nào.....</h3>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Nhúng thư viện AngularJS -->
+    <script src="./libs/angular.min.js"></script>
+    <script src="./js/buoi5.js"></script>
+</body>
+
+</html>

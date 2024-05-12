@@ -1,0 +1,54 @@
+<div class="container-sm my-4">
+    <div class="card mx-5">
+        <h3 class="card-header text-start">{{title}}</h3>
+        <div class="card-body">
+            <form >
+                <div class="mb-3">
+                    <label class="form-label">Tên đăng nhập *</label>
+                    <input type="text" class="form-control" placeholder="Tên đăng nhập" ng-model="user.tenDN" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Họ và tên *</label>
+                    <input type="text" class="form-control" placeholder="Họ và tên" ng-model="user.hoTen" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Căn cước công dân *</label>
+                    <input type="text" class="form-control" placeholder="" ng-model="user.cccd" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Địa chỉ email *</label>
+                    <input type="text" class="form-control" placeholder="name@example.com" ng-model="user.email" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Số điện thoại *</label>
+                    <input type="text" class="form-control" ng-model="user.sdt" readonly>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password *</label>
+                    <input type="password" class="form-control" ng-model="user.matKhau" readonly>
+                </div>
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Giới tính</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="1" ng-model="user.gioiTinh"   ng-checked="user.gioiTinh=='1'" disabled>
+                            <label class="form-check-label" for="gridRadios1">Nam</label>
+                            
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                value="0" ng-model="user.gioiTinh"  ng-checked="user.gioiTinh=='0'" disabled>
+                            <label class="form-check-label" for="gridRadios2">Nữ</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="mb-3">
+                    <label class="form-label">Ngày sinh *</label>
+                    <input type="date" class="form-control" ng-model="user.ngaySinh" readonly>
+                    <p ng-if="kiemTra.ngaySinh" class="text-danger">Vui lòng nhập ngày sinh</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

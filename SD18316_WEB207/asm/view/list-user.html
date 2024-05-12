@@ -1,0 +1,67 @@
+<div
+  class="tab-pane fade show active"
+  id="v-pills-messages"
+  role="tabpanel"
+  aria-labelledby="v-pills-messages-tab"
+>
+  <div class="row p-3">
+    <div class="card">
+      <h3 class="card-header">Danh sách User</h3>
+      <div class="card-body">
+        <a class="btn btn-success mb-3" href="#!/dang-ky" role="button"
+          >+ Thêm user mới</a
+        >
+        <div class="table-responsive">
+          <table
+            class="table table-light table-bordered table-hover table-striped"
+          >
+            <thead class="table-warning">
+              <tr>
+                <th>STT</th>
+                <th scope="col">Tên đăng nhập</th>
+                <th scope="col">Họ và tên</th>
+                <th scope="col">CCCD</th>
+                <th>Email</th>
+                <th>SDT</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>Hành động</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="" ng-repeat="item in listUser">
+                <td scope="row">{{$index+1}}</td>
+                <td>{{item.tenDN}}</td>
+                <td>{{item.hoTen}}</td>
+                <td>{{item.cccd}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.sdt}}</td>
+                <td>
+                  <span ng-if="item.gioiTinh== 1">Nam</span>
+                  <span ng-if="item.gioiTinh== 0">Nữ</span>
+                </td>
+                <td>{{item.ngaySinh | date:'dd-MM-yyyy' }}</td>
+                <td>
+                  <a href="#!/detail-user/{{item.id}}">
+                    <button class="btn btn-info me-2">Xem chi tiết</button>
+                  </a>
+                  <a
+                    href="#!/update-user/{{item.id}}"
+                    class="btn btn-warning"
+                    >Sửa</a
+                  >
+                  <button
+                    ng-click="delUser(item.id)"
+                    class="btn btn-danger me-2"
+                  >
+                    Xóa
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

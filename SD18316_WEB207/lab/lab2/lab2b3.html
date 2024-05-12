@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Lab 2 Bài 3</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                        class="bi bi-pencil-square">
+                    </i>CẬP NHẬT</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                        class="bi bi-file-ruled-fill">
+                    </i>DANH SÁCH</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="container pt-4">
+                    <div class="panel panel-default bg-body-secondary">
+                        <div class="panel-heading">
+                            <div class="panel-title text-uppercase fw-medium px-3 py-3"><i class="bi bi-pencil-square">
+                                </i>nhập
+                                lương tháng 12</div>
+                        </div>
+                        <div class="panel-body bg-light px-4 py-4">
+                            <form action="">
+                                <div class="row">
+                                    <div class="form-group col-sm-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Mã nhân viên</label>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Câu lạc bộ</label>
+                                            <select class="form-select">
+                                                <option value="1">Hà Nội</option>
+                                                <option value="2">Hồ Chí Minh</option>
+                                                <option value="3">Đà Nẵng</option>
+                                                <option value="3">Cần Thơ</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Thưởng</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">$</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <span class="input-group-text">.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Họ và tên</label>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Lương</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">$</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <span class="input-group-text">.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Phụ cấp</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">$</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <span class="input-group-text">.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3">
+                                        <label class="form-label">Ghi chú</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="bi bi-save2-fill">
+                                            </i>Lưu</button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="bi bi-square-fill"> </i>Hủy</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="panel-footer px-3 py-3">Vui lòng nhập thông tin lương cầu thủ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container pt-4">
+                    <div class="panel panel-default bg-body-secondary">
+                        <div class="panel-heading">
+                            <div class="panel-title text-uppercase fw-medium px-3 py-3"><i
+                                    class="bi bi-file-ruled-fill">
+                                </i>bảng lương tháng
+                                12</div>
+                        </div>
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr class="align-middle text text-center table-warning">
+                                    <th rowspan="2">MÃ NV</th>
+                                    <th rowspan="2">HỌ VÀ TÊN</th>
+                                    <th colspan="3">THU NHẬP</th>
+                                </tr>
+                                <tr class="align-middle text text-center table-warning">
+                                    <th>LƯƠNG</th>
+                                    <th>THƯỞNG</th>
+                                    <th>PHỤ CẤP</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>NV100</td>
+                                    <td>Nguyễn Công Phượng</td>
+                                    <td>5000000</td>
+                                    <td>500000</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>NV102</td>
+                                    <td>Phan Văn Tài Em</td>
+                                    <td>9000000</td>
+                                    <td>600000</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>NV103</td>
+                                    <td>Lê Huỳnh Đức</td>
+                                    <td>7000000</td>
+                                    <td>300000</td>
+                                    <td>200000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="panel-footer ps-3 pb-3">Lương của cầu thủ và huấn luyện viên chuyên nghiệp</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

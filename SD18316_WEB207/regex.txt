@@ -1,0 +1,26 @@
+* Một số hàm kiểm tra hợp lệ dữ liệu:
+­	Kiểm tra là số
+        function isNum(num)
+    	{
+    		var regex = /^\d+$/;
+    		return regex.test(num)
+    	}
+
+­	Kiểm tra là email
+    	function isEmail(email)
+    	{
+    		var regex = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+    		return regex.test(email)
+    	}
+
+­	Kiểm tra là số điện thoại việt nam 
+    	function isMobileVietNam(mobile)
+    	{
+    		var regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+    		return regex.test(mobile);
+    	}
+
+
+
+
+

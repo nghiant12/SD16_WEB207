@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AngularJS</title>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <img src="./img/{{photo}}" width="200">
+        <ul>
+            <li>Họ và tên: {{fullname}}</li>
+            <li>Ngày sinh: {{birthday}}</li>
+            <li>Giới tính: {{gender}}</li>
+            <li>Điểm trung bình: {{mark}}</li>
+        </ul>
+    </div>
+    <script src="./libs/angular.min.js"></script>
+    <script src="./js/lab4.js"></script>
+</body>
+
+</html>

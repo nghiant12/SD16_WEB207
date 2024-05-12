@@ -1,0 +1,43 @@
+<h1>{{title}}</h1>
+<form>
+    <div class="mb-3">
+        <label for="" class="form-label">Tiêu đề</label>
+        <input type="text" name="" id="" class="form-control" placeholder="Nhập tiêu đề" ng-model="post.tieude"
+            disabled />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nội dung</label>
+        <input type="text" name="" id="" class="form-control" placeholder="Nhập nội dung" ng-model="post.noidung"
+            disabled />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Tác giả</label>
+        <input type="text" name="" id="" class="form-control" placeholder="Nhập tác giả" ng-model="post.tacgia"
+            disabled />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Thể loại</label>
+        <select class="form-select" name="" id="" ng-model="post.theloai" disabled>
+            <option disabled>Chọn thể loại</option>
+            <option value="Tin tức">Tin tức</option>
+            <option value="Truyện ngắn">Truyện ngắn</option>
+            <option value="Tiểu thuyết">Tiểu thuyết</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ngày đăng</label>
+        <input type="date" name="" id="" class="form-control" ng-model="post.ngaydang" disabled />
+    </div>
+    <div class="mb-3">
+        <a href="#!/edit/post/{{post.id}}">
+            <button class="btn btn-success">
+                Chỉnh sửa
+            </button>
+        </a>
+        <a href="#!/list-post">
+            <button class="btn btn-secondary">
+                Quay lại
+            </button>
+        </a>
+    </div>
+</form>

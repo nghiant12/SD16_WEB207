@@ -1,0 +1,35 @@
+<div class="card my-3">
+    <h5 class="card-header">{{title}}</h5>
+    <!-- <p>{{listStudent}}</p> -->
+    <div class="card-body">
+        <a href="#!/add">
+            <button type="submit" class="btn btn-success mb-3">+ Thêm sinh viên mới</button>
+        </a>
+        <table class="table table-striped table-bordered table-hover">
+            <thead class="table-warning">
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Họ tên</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Ngày sinh</th>
+                    <th scope="col">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="" ng-repeat="item in listStudent">
+                    <td>{{$index + 1}}</td>
+                    <td>{{item.hoTen}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.ngaySinh | date: "dd/MM/yyyy"}}</td>
+                    <td>
+                        <a href="#!/detail/{{item.id}}">
+                            <button ng-click="" class="btn btn-warning">Xem chi tiết</button>
+                        </a>
+                        <button ng-click="delStudent(item.id)" class="btn btn-danger">Xóa</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

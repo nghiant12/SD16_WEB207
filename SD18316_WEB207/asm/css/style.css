@@ -1,0 +1,25 @@
+/* body{
+    background-image: url(/asm/img/banner-khoahoc.png) no-repeat center center;
+    background-size: cover;
+} */
+
+.nav-link {
+    text-align: start;
+    padding-left: 30px;
+}
+
+.btn-chinhsua {
+    margin-top: 10px;
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem;
+    --bs-btn-font-size: .75rem;
+}
+
+.tab {
+    transition: transform 0.3s ease-in-out;
+}
+
+.tab:hover {
+    transform: scale(1.1);
+    /* Khi di chuột vào, tab sẽ phóng to lên 10% */
+}

@@ -1,0 +1,7 @@
+Tạo 1 dự án nhỏ có 4 router (sử dụng ngRoute trong angularjs)
+list, add, edit, delete
+Xây dựng giao diện của 3 trang (list, add, edit)
+Xây dựng controller và map tới lần lượt 4 router trên
+Trong ListController tạo 1 mảng đối tượng là SinhVien 
+(id, hoTen, maSV, gioiTinh)  (tối thiểu có 3 sv)
+Thược hiện hiển thị dữ liệu ra table ở view/list

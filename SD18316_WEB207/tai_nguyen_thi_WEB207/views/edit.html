@@ -1,0 +1,38 @@
+<h1>{{title}}</h1>
+<form ng-submit="editPost()">
+    <div class="mb-3">
+        <label for="" class="form-label">Tiêu đề</label>
+        <input type="text" name="" id="" class="form-control" placeholder="Nhập tiêu đề" ng-model="post.tieude" />
+        <p class="text text-danger" ng-if="kiemtra.tieude">Vui lòng nhập lại tiêu đề</p>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nội dung</label>
+        <input type="text" name="" id="" class="form-control" placeholder="Nhập nội dung" ng-model="post.noidung" />
+        <p class="text text-danger" ng-if="kiemtra.noidung">Vui lòng nhập lại nội dung</p>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Tác giả</label>
+        <input type="text" name="" id="" class="form-control" placeholder="Nhập tác giả" ng-model="post.tacgia" />
+        <p class="text text-danger" ng-if="kiemtra.tacgia">Vui lòng nhập lại tác giả</p>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Thể loại</label>
+        <select class="form-select" name="" id="" ng-model="post.theloai">
+            <option disabled>Chọn thể loại</option>
+            <option value="Tin tức">Tin tức</option>
+            <option value="Truyện ngắn">Truyện ngắn</option>
+            <option value="Tiểu thuyết">Tiểu thuyết</option>
+        </select>
+        <p class="text text-danger" ng-if="kiemtra.theloai">Vui lòng nhập lại thể loại</p>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ngày đăng</label>
+        <input type="date" name="" id="" class="form-control" ng-model="post.ngaydang" />
+        <p class="text text-danger" ng-if="kiemtra.ngaydang">Vui lòng nhập lại ngày đăng</p>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-success">
+            Sửa thông tin
+        </button>
+    </div>
+</form>

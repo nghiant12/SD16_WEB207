@@ -1,0 +1,36 @@
+<h1>{{title}}</h1>
+<a href="#!/post/add">
+    <button type="button" class="btn btn-success my-3">
+        + Thêm bài viết mới
+    </button>
+</a>
+
+<div class="table-responsive">
+    <table class="table table-light table-hover">
+        <thead>
+            <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Tiêu đề</th>
+                <th scope="col">Nội dung</th>
+                <th scope="col">Tác giả</th>
+                <th scope="col">Thể loại</th>
+                <th scope="col">Ngày đăng</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="" ng-repeat="item in listPost">
+                <td>{{item.id}}</td>
+                <td>{{item.tieu_de}}</td>
+                <td>{{item.noi_dung}}</td>
+                <td>{{item.tac_gia}}</td>
+                <td>{{item.the_loai}}</td>
+                <td>{{item.ngay_dang | date: "dd/MM/yyyy"}}</td>
+                <td>
+                    <a href="#!/detail/post/{{item.id}}"><button class="btn btn-warning">Xem chi tiết</button></a>
+                    <button class="btn btn-danger" ng-click="deletePost(item.id)">Xóa</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

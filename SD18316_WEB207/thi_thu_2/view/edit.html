@@ -1,0 +1,36 @@
+<h1>{{title}}</h1>
+<form ng-submit="editEmployee()">
+    <div class="mb-3">
+        <label for="" class="form-label">Họ tên</label>
+        <input type="text" name="" id="" class="form-control" placeholder="" ng-model="employee.hoten" />
+        <p class="text text-danger" ng-if="kiemTra.hoTen">Vui lòng nhập họ tên</p>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Số điện thoại</label>
+        <input type="text" name="" id="" class="form-control" placeholder="" ng-model="employee.sdt" />
+        <p class="text text-danger" ng-if="kiemTra.sdt">Vui lòng nhập lại số điện thoại</p>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="text" name="" id="" class="form-control" placeholder="" ng-model="employee.email" />
+        <p class="text text-danger" ng-if="kiemTra.email">Vui lòng nhập lại email</p>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Chức vụ</label>
+        <select class="form-select" ng-model="employee.chucvu">
+            <option disabled>Chức vụ</option>
+            <option value="Trưởng phòng">Trưởng phòng</option>
+            <option value="Nhân viên">Nhân viên</option>
+            <option value="Giám đốc">Giám đốc</option>
+        </select>
+        <p class="text text-danger" ng-if="kiemTra.chucVu">Vui lòng chọn chức vụ</p>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ngày sinh</label>
+        <input type="date" name="" id="" class="form-control" placeholder="" ng-model="employee.ngaysinh" />
+        <p class="text text-danger" ng-if="kiemTra.ngaySinh">Vui lòng nhập lại ngày sinh</p>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-warning">Chỉnh sửa nhân viên</button>
+    </div>
+</form>

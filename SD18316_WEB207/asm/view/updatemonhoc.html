@@ -1,0 +1,20 @@
+<div class="container-sm">
+    <div class=" card mx-5 my-5">
+        <h3 class="card-header">{{title}}</h3>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label for="" class="form-label">Mã môn học</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="" ng-model="monhoc.maMH" />
+                    <small ng-if="kiemTra.maMH" class="form-text text-danger">Vui lòng nhập lại mã môn học</small>
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Tên môn học</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="" ng-model="monhoc.tenMH" />
+                    <small ng-if="kiemTra.tenMH" class="form-text text-danger">Vui lòng nhập lại tên môn học</small>
+                </div>
+                <button ng-click="updateMonHoc()" class="btn btn-success">Sửa thông tin</button>
+            </form>
+        </div>
+    </div>
+</div>

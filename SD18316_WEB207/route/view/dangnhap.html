@@ -1,0 +1,37 @@
+<h2 class="my-4">Đăng nhập</h2>
+<form ng-submit="dangNhap()">
+    <div class="mb-3">
+        <label for="" class="form-label">Tên đăng nhập</label>
+        <input
+            ng-model="inputValue.tenDangNhap"
+            type="text"
+            name=""
+            id=""
+            class="form-control"
+            placeholder=""
+        />
+        <!-- <span class="text-danger">{{mesDN}}</span> -->
+        <p ng-if="error.tenDangnhap" class="text-danger">{{error.tenDangnhap}}</p>
+    </div>
+    
+    <div class="mb-3">
+        <label for="" class="form-label">Mật khẩu</label>
+        <input
+            ng-model="inputValue.matKhau"
+            type="password"
+            class="form-control"
+            name=""
+            id=""
+            placeholder=""
+        />
+        <!-- <span class="text-danger">{{mesMK}}</span> -->
+        <p ng-if="error.matKhau" class="text-danger">{{error.matKhau}}</p>
+    </div>
+    <button
+        type="submit"
+        class="btn btn-primary"
+    >
+        Submit
+    </button>
+    
+</form>

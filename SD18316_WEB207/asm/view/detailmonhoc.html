@@ -1,0 +1,18 @@
+<div class="container-sm">
+    <div class=" card mx-5 my-5">
+        <h3 class="card-header">{{title}}</h3>
+        <div class="card-body">
+            <div class="mb-3">
+                <label for="" class="form-label">Mã môn học</label>
+                <input type="text" class="form-control" ng-model="monhoc.maMH" disabled />
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Tên môn học</label>
+                <input type="text" class="form-control" ng-model="monhoc.tenMH" disabled />
+            </div>
+            <a href="#!/update-mon-hoc/{{monhoc.id}}">
+                <button class="btn btn-warning">Chỉnh sửa</button>
+            </a>
+        </div>
+    </div>
+</div>

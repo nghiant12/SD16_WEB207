@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+    Để khỏi tạo một chương trình,
+    Chúng ta cần định nghĩa vùng sử dụng vùng sử dụng AngularJS
+    ng-app: dùng để định nghĩa vùng sử dụng AngularJS
+ -->
+
+<body ng-app="NghiaNT12">
+    <div ng-controller="myController">
+        <h1>{{xinchao}}</h1>
+        <h1 ng-bind="xinchao"></h1>
+    </div>
+    <div ng-controller="myController1">
+        <h1>{{hoTen}}</h1>
+        <h1>{{diaChi}}</h1>
+        <h1>{{sdt}}</h1>
+        <h1>{{ngayChiaTay}}</h1>
+        <h2>{{nymArr}}</h2>
+        <table border="">
+            <thead>
+                <th>STT</th>
+                <th>Ho ten</th>
+                <th>Dia chi</th>
+                <th>Sdt</th>
+                <th>Ngay chia tay</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in nymArr track by $index">
+                    <td>{{ $index + 1 }}</td>
+                    <td>{{ item.hoTen }}</td>
+                    <td>{{ item.diaChi }}</td>
+                    <td>{{ item.sdt }}</td>
+                    <td>{{ item.ngayChiaTay }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Nhúng thư viện AngularJS -->
+    <!-- <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script> -->
+    <script src="./libs/angular.min.js"></script>
+    <script src="./js/buoi4.js"></script>
+</body>
+
+</html>
